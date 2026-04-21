@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Movie Recommender - MCA Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎬 AI Movie Recommendation System</h1>
+        <p>Content-Based Filtering using Cosine Similarity</p>
+    </header>
+
+    <main>
+        <section class="info-section">
+            <h2>How it Works (AI/ML Concept)</h2>
+            <p>This system uses <strong>Content-Based Filtering</strong> with <strong>Cosine Similarity</strong> 
+            algorithm to recommend movies based on genres, director, and cast features.</p>
+        </section>
+
+        <section class="search-section">
+            <h2>Select a Movie You Like:</h2>
+            <select id="movieSelect">
+                <option value="">-- Choose a Movie --</option>
+            </select>
+            <button id="recommendBtn">Get Recommendations</button>
+        </section>
+
+        <section class="selected-movie" id="selectedMovie"></section>
+
+        <section class="results-section">
+            <h2 id="resultsTitle"></h2>
+            <div id="recommendations" class="movie-grid"></div>
+        </section>
+
+        <section class="algorithm-section" id="algorithmSection" style="display:none;">
+            <h2>📊 Algorithm Details</h2>
+            <div id="algorithmDetails"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>MCA AI/ML Project | Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
